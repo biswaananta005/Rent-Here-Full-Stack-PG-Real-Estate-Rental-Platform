@@ -1,0 +1,122 @@
+/* HeroSection Component Styles */
+.hero-banner {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F1F5F9 100%);
+  padding: 4.5rem 0 3.5rem;
+  border-bottom: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  background: var(--accent-emerald-light);
+  color: var(--accent-emerald-dark);
+  border: 1px solid var(--accent-emerald-border);
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.hero-title {
+  font-size: 3.25rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+.hero-title-accent {
+  color: var(--accent-emerald);
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 680px;
+  margin: 0 auto 2.5rem;
+}
+
+.search-filter-card {
+  background: #ffffff;
+  border-radius: var(--radius-xl);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.search-filter-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.2fr 1fr;
+  gap: 0.85rem;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .search-filter-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-label-uppercase {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.input-relative {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.input-padded {
+  padding-left: 2.6rem;
+}
+
+/* Stronger, component-scoped rule to override global padding shorthand
+   and ensure placeholder/text starts after the icon */
+.input-relative .form-input.input-padded,
+.input-relative .form-select.input-padded {
+  padding-left: 2.6rem;
+}
+
+/* Ensure icon is above the input text (in case of z-index stacking issues) */
+.input-relative .input-icon {
+  z-index: 2;
+}
+
+.filter-bar-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.85rem;
+}
+
+.filter-count-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-muted);
+}
+
+.btn-reset-filter {
+  color: #E11D48;
+  border: none;
+  background: transparent;
+}

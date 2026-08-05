@@ -1,0 +1,43 @@
+/* BuyerDashboard Page Styles */
+.buyer-header-banner {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.buyer-header-badge {
+  margin-bottom: 0.4rem;
+}
+
+.buyer-inquiry-item {
+  padding: 1.25rem;
+}
+
+.buyer-inquiry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.buyer-inquiry-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.buyer-inquiry-sub {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.buyer-inquiry-msg {
+  background: var(--bg-app);
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  font-size: 0.9rem;
+  color: var(--text-body);
+}

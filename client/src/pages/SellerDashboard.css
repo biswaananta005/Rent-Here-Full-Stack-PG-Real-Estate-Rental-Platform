@@ -1,0 +1,175 @@
+/* SellerDashboard Page Styles */
+.dashboard-container {
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+}
+
+.seller-header-banner {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.dashboard-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.tab-nav-bar {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 2rem;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  border-bottom: 3px solid transparent;
+  padding-bottom: 0.75rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.tab-btn.active {
+  color: var(--accent-emerald);
+  border-bottom-color: var(--accent-emerald);
+}
+
+.seller-listings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.seller-property-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1.25rem;
+  gap: 1.25rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.seller-prop-info-box {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  min-width: 300px;
+  flex: 2;
+}
+
+.seller-prop-thumb {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  flex-shrink: 0;
+}
+
+.seller-prop-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.seller-prop-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.seller-prop-location {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.seller-rejection-box {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--status-rejected-bg);
+  border: 1px solid var(--status-rejected-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  color: var(--status-rejected-text);
+}
+
+.seller-actions-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn-delete-prop {
+  color: #DC2626;
+}
+
+.inquiry-card {
+  padding: 1.25rem;
+}
+
+.inquiry-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.inquiry-buyer-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.inquiry-buyer-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.inquiry-buyer-name {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.inquiry-buyer-contact {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.inquiry-message-box {
+  background: var(--bg-app);
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  margin-bottom: 0.85rem;
+  font-size: 0.9rem;
+}
+
+.inquiry-actions-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}

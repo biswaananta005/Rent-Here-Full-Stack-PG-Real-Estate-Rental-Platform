@@ -1,0 +1,26 @@
+/* Home Page Styles */
+.home-main-section {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.home-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.75rem;
+}
+
+.home-section-badge {
+  margin-bottom: 0.4rem;
+}
+
+.home-section-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.home-count-text {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}

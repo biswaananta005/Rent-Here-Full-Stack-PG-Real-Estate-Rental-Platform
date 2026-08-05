@@ -1,0 +1,29 @@
+/* RejectReasonModal Component Styles */
+.reject-modal-container {
+  max-width: 500px;
+}
+
+.reject-modal-header {
+  background: var(--status-rejected-bg);
+  border-bottom: 1px solid var(--status-rejected-border);
+}
+
+.reject-header-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--status-rejected-text);
+}
+
+.reject-target-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.reject-actions-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}

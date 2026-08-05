@@ -1,0 +1,111 @@
+/* BrandLogo Component Styles */
+.brand-logo-link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.brand-logo-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.brand-badge-box {
+  background: transparent;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.25);
+  flex-shrink: 0;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.brand-logo-link:hover .brand-badge-box {
+  transform: scale(1.04);
+  box-shadow: 0 6px 18px rgba(5, 150, 105, 0.35);
+}
+
+.brand-emblem-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.brand-text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand-logo-text {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.brand-text-dark {
+  color: #1A2536;
+}
+
+.brand-text-emerald {
+  color: #10B981;
+}
+
+.brand-tagline-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+}
+
+.tagline-line {
+  height: 2px;
+  width: 18px;
+  background-color: #10B981;
+  border-radius: 1px;
+}
+
+.tagline-text {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #1A2536;
+  letter-spacing: 0.15em;
+}
+
+/* Size Variants */
+.brand-logo-small .brand-badge-box {
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 10px;
+}
+.brand-logo-small .brand-logo-text {
+  font-size: 1.25rem;
+}
+
+.brand-logo-medium .brand-badge-box {
+  width: 2.65rem;
+  height: 2.65rem;
+  border-radius: 12px;
+}
+.brand-logo-medium .brand-logo-text {
+  font-size: 1.5rem;
+}
+
+.brand-badge-box img,
+.brand-logo-image {
+  width: 160%;
+  height: 110%;
+  object-fit: contain;
+}
+
+.brand-logo-large .brand-badge-box {
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 16px;
+}
+.brand-logo-large .brand-logo-text {
+  font-size: 2.1rem;
+}

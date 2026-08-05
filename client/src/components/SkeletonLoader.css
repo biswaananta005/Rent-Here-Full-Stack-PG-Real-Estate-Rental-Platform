@@ -1,0 +1,58 @@
+/* SkeletonLoader Component Styles */
+.grid-marketplace {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.75rem;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #F1F5F9 25%, #E2E8F0 50%, #F1F5F9 75%);
+  background-size: 200% 100%;
+  animation: skeletonPulse 1.5s infinite;
+  border-radius: var(--radius-md);
+}
+
+.skeleton-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+}
+
+.skeleton-text-price {
+  height: 1.5rem;
+  width: 40%;
+  margin-bottom: 0.75rem;
+}
+
+.skeleton-text-title {
+  height: 1.25rem;
+  width: 80%;
+  margin-bottom: 0.5rem;
+}
+
+.skeleton-text-loc {
+  height: 1rem;
+  width: 60%;
+  margin-bottom: 1rem;
+}
+
+.skeleton-chips-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.skeleton-chip {
+  height: 1.25rem;
+  width: 25%;
+}
+
+.skeleton-btn {
+  height: 2.25rem;
+  width: 100%;
+  border-radius: var(--radius-md);
+}
+
+@keyframes skeletonPulse {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

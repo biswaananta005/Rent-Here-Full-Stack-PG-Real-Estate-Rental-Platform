@@ -1,0 +1,167 @@
+/* AdminDashboard Page Styles */
+.admin-super-banner {
+  background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+  color: #ffffff;
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.admin-banner-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.admin-banner-pill-text {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #A7F3D0;
+}
+
+.admin-banner-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.admin-banner-sub {
+  color: #94A3B8;
+  font-size: 0.95rem;
+}
+
+.admin-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.admin-metric-card {
+  padding: 1.25rem;
+}
+
+.admin-metric-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+.admin-metric-value {
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: var(--font-heading);
+}
+
+.val-pending { color: #B45309; }
+.val-approved { color: #047857; }
+.val-users { color: #2563EB; }
+.val-inquiries { color: #7C3AED; }
+
+.admin-metric-sub {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.pending-card-item {
+  padding: 1.5rem;
+  border-left: 4px solid #F59E0B;
+}
+
+.pending-card-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.pending-info-wrap {
+  display: flex;
+  gap: 1.25rem;
+  min-width: 320px;
+  flex: 3;
+}
+
+.pending-thumb-img {
+  width: 140px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+
+.pending-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.pending-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.pending-address-text {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0.2rem 0 0.5rem;
+}
+
+.pending-seller-box {
+  font-size: 0.8rem;
+  color: var(--text-body);
+  background: var(--bg-app);
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+}
+
+.pending-actions-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  min-width: 150px;
+}
+
+.all-prop-row {
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.all-prop-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-row-item {
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.user-row-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-row-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
