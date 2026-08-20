@@ -36,41 +36,41 @@ const seedDB = async () => {
       avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80',
     });
 
-    // const seller1 = await User.create({
-    //   name: 'Vikram Sharma',
-    //   email: 'seller@renthere.com',
-    //   password: sellerPassword,
-    //   phone: '+91 9812345678',
-    //   role: 'seller',
-    //   avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80',
-    // });
+    const seller1 = await User.create({
+      name: 'Vikram Sharma',
+      email: 'seller@renthere.com',
+      password: sellerPassword,
+      phone: '+91 9812345678',
+      role: 'seller',
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80',
+    });
 
-    // const seller2 = await User.create({
-    //   name: 'Anand Verma',
-    //   email: 'anand@renthere.com',
-    //   password: sellerPassword,
-    //   phone: '+91 9765432109',
-    //   role: 'seller',
-    //   avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80',
-    // });
+    const seller2 = await User.create({
+      name: 'Anand Verma',
+      email: 'anand@renthere.com',
+      password: sellerPassword,
+      phone: '+91 9765432109',
+      role: 'seller',
+      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80',
+    });
 
-    // const buyer1 = await User.create({
-    //   name: 'Rahul Kumar',
-    //   email: 'buyer@renthere.com',
-    //   password: buyerPassword,
-    //   phone: '+91 9123456789',
-    //   role: 'buyer',
-    //   avatar: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=300&q=80',
-    // });
+    const buyer1 = await User.create({
+      name: 'Rahul Kumar',
+      email: 'buyer@renthere.com',
+      password: buyerPassword,
+      phone: '+91 9123456789',
+      role: 'buyer',
+      avatar: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=300&q=80',
+    });
 
-    // const buyer2 = await User.create({
-    //   name: 'Rohit Singh',
-    //   email: 'rohit@renthere.com',
-    //   password: buyerPassword,
-    //   phone: '+91 9988776655',
-    //   role: 'buyer',
-    //   avatar: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=300&q=80',
-    // });
+    const buyer2 = await User.create({
+      name: 'Rohit Singh',
+      email: 'rohit@renthere.com',
+      password: buyerPassword,
+      phone: '+91 9988776655',
+      role: 'buyer',
+      avatar: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=300&q=80',
+    });
 
     // Seed Properties
     const propertiesData = [
