@@ -1,0 +1,28 @@
+{
+  "name": "rent-here-platform",
+  "version": "1.0.0",
+  "description": "Rent Here — Fullstack Real Estate & PG Rental Platform",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "cd server && npm start",
+    "client": "cd client && npm run dev",
+    "build": "npm run build:client",
+    "build:client": "cd client && npm install && npm run build",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mern",
+    "react",
+    "nodejs",
+    "express",
+    "mongodb",
+    "real-estate",
+    "rental"
+  ],
+  "author": "",
+  "license": "MIT"
+}
