@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
 import axios from 'axios';
 import toast from 'react-hot-toast';
-import { X, User, Store } from 'lucide-react';
+import { X, User, Store, Shield, Sparkles } from 'lucide-react';
 import './AuthModal.css';
 
 const AuthModal = ({ isOpen, onClose }) => {
@@ -40,6 +40,20 @@ const AuthModal = ({ isOpen, onClose }) => {
     }
   };
 
+  // Quick 1-Click Demo Login Trigger
+  const handleQuickDemoLogin = async (demoEmail, demoPass) => {
+    setLoading(true);
+    try {
+      const res = await axios.post('/api/auth/login', { email: demoEmail, password: demoPass });
+      loginUser(res.data, res.data.token);
+      onClose();
+    } catch (error) {
+      toast.error('Quick login error: ' + (error.response?.data?.message || error.message));
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-container auth-modal-container" onClick={(e) => e.stopPropagation()}>
@@ -66,6 +80,36 @@ const AuthModal = ({ isOpen, onClose }) => {
 
         {/* Body */}
         <div className="modal-body">
+          {/* Quick Demo Section */}
+          <div className="quick-demo-box">
+            <div className="quick-demo-title">
+              <Sparkles size={14} /> 1-Click Quick Demo Login (Instant Access)
+            </div>
+            <div className="quick-demo-grid">
+              <button
+                type="button"
+                onClick={() => handleQuickDemoLogin('admin@renthere.com', 'admin123')}
+                className="btn btn-secondary quick-demo-btn"
+              >
+                <Shield size={12} style={{ color: '#DC2626' }} /> Admin
+              </button>
+              <button
+                type="button"
+                onClick={() => handleQuickDemoLogin('seller@renthere.com', 'seller123')}
+                className="btn btn-secondary quick-demo-btn"
+              >
+                <Store size={12} style={{ color: '#D97706' }} /> Seller
+              </button>
+              <button
+                type="button"
+                onClick={() => handleQuickDemoLogin('buyer@renthere.com', 'buyer123')}
+                className="btn btn-secondary quick-demo-btn"
+              >
+                <User size={12} style={{ color: '#2563EB' }} /> Buyer
+              </button>
+            </div>
+          </div>
+
           <form onSubmit={handleSubmit}>
             {!isLoginTab && (
               <>

@@ -1,6 +1,6 @@
 /* AuthModal Component Styles */
 .auth-modal-container {
-  max-width: 440px;
+  max-width: 460px;
 }
 
 .auth-tab-btn {
@@ -18,6 +18,36 @@
 .auth-tab-btn.active {
   color: var(--accent-emerald);
   border-bottom-color: var(--accent-emerald);
+}
+
+.quick-demo-box {
+  background: var(--bg-app);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  border: 1px dashed var(--accent-emerald-border);
+  margin-bottom: 1.5rem;
+}
+
+.quick-demo-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-emerald-dark);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.quick-demo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.quick-demo-btn {
+  font-size: 0.75rem;
+  padding: 0.4rem 0.2rem;
+  justify-content: center;
 }
 
 .role-selector-grid {
