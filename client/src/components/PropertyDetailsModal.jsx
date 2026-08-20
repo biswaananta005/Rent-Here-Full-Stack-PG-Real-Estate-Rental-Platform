@@ -24,6 +24,15 @@ const PropertyDetailsModal = ({ property, onClose, onOpenAuthModal }) => {
     }).format(val);
   };
 
+  const resolveImageUrl = (imgStr) => {
+    if (!imgStr) return 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80';
+    if (imgStr.startsWith('/uploads')) {
+      const baseUrl = import.meta.env.VITE_API_URL || '';
+      return `${baseUrl}${imgStr}`;
+    }
+    return imgStr;
+  };
+
   const handleSendInquiry = async (e) => {
     e.preventDefault();
     if (!user) {
@@ -84,7 +93,7 @@ const PropertyDetailsModal = ({ property, onClose, onOpenAuthModal }) => {
           <div className="details-section">
             <div className="gallery-main-wrap">
               <img
-                src={property.images && property.images[activeImgIndex] ? property.images[activeImgIndex] : 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80'}
+                src={property.images && property.images[activeImgIndex] ? resolveImageUrl(property.images[activeImgIndex]) : 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80'}
                 alt={property.title}
                 className="gallery-main-img"
               />
@@ -95,7 +104,7 @@ const PropertyDetailsModal = ({ property, onClose, onOpenAuthModal }) => {
                 {property.images.map((img, idx) => (
                   <img
                     key={idx}
-                    src={img}
+                    src={resolveImageUrl(img)}
                     alt={`Thumb ${idx}`}
                     onClick={() => setActiveImgIndex(idx)}
                     className={`gallery-thumb-img ${activeImgIndex === idx ? 'active' : ''}`}

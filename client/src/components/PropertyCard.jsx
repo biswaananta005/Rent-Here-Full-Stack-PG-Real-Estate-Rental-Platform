@@ -28,8 +28,17 @@ const PropertyCard = ({ property, onSelectProperty }) => {
     }
   };
 
+  const resolveImageUrl = (imgStr) => {
+    if (!imgStr) return 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80';
+    if (imgStr.startsWith('/uploads')) {
+      const baseUrl = import.meta.env.VITE_API_URL || '';
+      return `${baseUrl}${imgStr}`;
+    }
+    return imgStr;
+  };
+
   const mainImage = property.images && property.images.length > 0
-    ? property.images[0]
+    ? resolveImageUrl(property.images[0])
     : 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80';
 
   return (
