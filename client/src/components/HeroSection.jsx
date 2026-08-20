@@ -63,11 +63,12 @@ const HeroSection = ({
                 >
                   <option value="">All Cities</option>
                   <option value="Bengaluru">Bengaluru</option>
+                  <option value="Hyderabad">Hyderabad</option>
+                  <option value="Bhubaneswar">Bhubaneswar</option>
+                  <option value="Chennai">Chennai</option>
                   <option value="Pune">Pune</option>
                   <option value="Delhi NCR">Delhi NCR / Gurugram</option>
                   <option value="Mumbai">Mumbai</option>
-                  <option value="Hyderabad">Hyderabad</option>
-                  <option value="Kota">Kota</option>
                 </select>
               </div>
             </div>

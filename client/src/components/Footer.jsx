@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import BrandLogo from './BrandLogo';
-import { ShieldCheck, CheckCircle2, Headphones } from 'lucide-react';
+import { ShieldCheck, CheckCircle2, Headphones, Code2 } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
@@ -43,8 +43,13 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/?city=Kota&propertyType=PG%20-%20Boys" className="footer-link-item">
-                  Student PG Hubs (Kota)
+                <Link to="/?city=Bhubaneswar&propertyType=PG%20-%20Boys" className="footer-link-item">
+                  Infocity Scholar PGs (Bhubaneswar)
+                </Link>
+              </li>
+              <li>
+                <Link to="/?city=Hyderabad&propertyType=PG%20-%20Boys" className="footer-link-item">
+                  Hitech City Boys PGs (Hyderabad)
                 </Link>
               </li>
             </ul>
@@ -57,6 +62,21 @@ const Footer = () => {
               <li>
                 <Link to="/?city=Bengaluru" className="footer-link-item">
                   Bengaluru (Koramangala, Indiranagar)
+                </Link>
+              </li>
+              <li>
+                <Link to="/?city=Hyderabad" className="footer-link-item">
+                  Hyderabad (Hitech City, Gachibowli)
+                </Link>
+              </li>
+              <li>
+                <Link to="/?city=Bhubaneswar" className="footer-link-item">
+                  Bhubaneswar (Patia, Saheed Nagar)
+                </Link>
+              </li>
+              <li>
+                <Link to="/?city=Chennai" className="footer-link-item">
+                  Chennai (Velachery, OMR Corridor)
                 </Link>
               </li>
               <li>
@@ -74,11 +94,6 @@ const Footer = () => {
                   Mumbai (Andheri West, Bandra)
                 </Link>
               </li>
-              <li>
-                <Link to="/?city=Kota" className="footer-link-item">
-                  Kota (Rajeev Gandhi Nagar)
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -93,17 +108,22 @@ const Footer = () => {
                 <CheckCircle2 size={14} className="footer-icon-emerald" /> Admin-Approved Property Listings
               </li>
               <li className="footer-trust-item">
-                <CheckCircle2 size={14} className="footer-icon-emerald" /> Transparent Security Deposit Info
+                <CheckCircle2 size={14} className="footer-icon-emerald" /> Transparent Security Deposit Terms
               </li>
               <li className="footer-trust-item">
-                <Headphones size={14} className="footer-icon-emerald" /> 24/7 Tenant Support Services
+                <Headphones size={14} className="footer-icon-emerald" /> 24/7 Tenant Assistance
               </li>
             </ul>
           </div>
         </div>
 
         <div className="footer-bottom">
-          © 2026 Rent Here Technologies Inc. All rights reserved. Find. Connect. Move In.
+          <div>
+            © 2026 Rent Here Technologies Inc. All rights reserved. Find. Connect. Move In.
+          </div>
+          <div className="footer-author-badge">
+            <Code2 size={14} /> Developed by Biswa Ananta
+          </div>
         </div>
       </div>
     </footer>

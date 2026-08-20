@@ -200,11 +200,12 @@ const AddPropertyModal = ({ isOpen, onClose, onPropertyCreated }) => {
                   onChange={(e) => setCity(e.target.value)}
                 >
                   <option value="Bengaluru">Bengaluru</option>
+                  <option value="Hyderabad">Hyderabad</option>
+                  <option value="Bhubaneswar">Bhubaneswar</option>
+                  <option value="Chennai">Chennai</option>
                   <option value="Pune">Pune</option>
                   <option value="Delhi NCR">Delhi NCR</option>
                   <option value="Mumbai">Mumbai</option>
-                  <option value="Hyderabad">Hyderabad</option>
-                  <option value="Kota">Kota</option>
                 </select>
               </div>
 

@@ -78,7 +78,24 @@
 .footer-bottom {
   border-top: 1px solid var(--border-color);
   padding-top: 1.5rem;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
   font-size: 0.85rem;
   color: var(--text-muted);
+}
+
+.footer-author-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--accent-emerald-light);
+  color: var(--accent-emerald-dark);
+  border: 1px solid var(--accent-emerald-border);
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 700;
 }
